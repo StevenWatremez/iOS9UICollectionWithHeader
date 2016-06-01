@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="a2G-GV-9yq">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Custom Collection View Controller-->
+        <scene sceneID="JGl-1X-c1S">
+            <objects>
+                <collectionViewController id="a2G-GV-9yq" customClass="CustomCollectionViewController" customModule="collectionviewtest" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" dataMode="prototypes" id="AAC-O5-YBG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="30" minimumInteritemSpacing="10" id="gx7-ih-8I3">
+                            <size key="itemSize" width="160" height="160"/>
+                            <size key="headerReferenceSize" width="50" height="75"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="20" minY="30" maxX="20" maxY="30"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="SwiftCollectionViewCell" reuseIdentifier="Cell" id="uxG-bI-erF" customClass="SwiftCollectionViewCell" customModule="collectionviewtest" customModuleProvider="target">
+                                <rect key="frame" x="20" y="105" width="160" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swift_icon" translatesAutoresizingMaskIntoConstraints="NO" id="veO-8a-LYH">
+                                            <rect key="frame" x="20" y="0.0" width="120" height="120"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="veO-8a-LYH" secondAttribute="height" id="7Fb-uk-Lxm"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SWIFT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsH-qj-p5U">
+                                            <rect key="frame" x="59" y="128" width="42" height="16"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS Language" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MCX-iY-Wvc">
+                                            <rect key="frame" x="41.5" y="144" width="78" height="14.5"/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="fsH-qj-p5U" firstAttribute="top" secondItem="veO-8a-LYH" secondAttribute="bottom" constant="8" id="9OO-yc-t6M"/>
+                                    <constraint firstAttribute="bottom" secondItem="MCX-iY-Wvc" secondAttribute="bottom" constant="1.5" id="C7a-0r-7vv"/>
+                                    <constraint firstAttribute="trailing" secondItem="veO-8a-LYH" secondAttribute="trailing" constant="20" id="Cdn-Ue-3PR"/>
+                                    <constraint firstItem="fsH-qj-p5U" firstAttribute="centerX" secondItem="uxG-bI-erF" secondAttribute="centerX" id="J4J-Vq-2WH"/>
+                                    <constraint firstItem="MCX-iY-Wvc" firstAttribute="top" secondItem="fsH-qj-p5U" secondAttribute="bottom" id="OVs-Je-USD"/>
+                                    <constraint firstItem="MCX-iY-Wvc" firstAttribute="centerX" secondItem="fsH-qj-p5U" secondAttribute="centerX" id="PjI-mz-rU5"/>
+                                    <constraint firstAttribute="bottom" secondItem="MCX-iY-Wvc" secondAttribute="bottom" id="Pp0-OI-PNf"/>
+                                    <constraint firstItem="veO-8a-LYH" firstAttribute="leading" secondItem="uxG-bI-erF" secondAttribute="leading" constant="20" id="cT8-Yx-KJ1"/>
+                                    <constraint firstItem="veO-8a-LYH" firstAttribute="top" secondItem="uxG-bI-erF" secondAttribute="top" id="hwa-Al-MW9"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Pp0-OI-PNf"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <outlet property="desc" destination="MCX-iY-Wvc" id="5Bt-Et-lI1"/>
+                                    <outlet property="imageView" destination="veO-8a-LYH" id="qPY-LY-WaM"/>
+                                    <outlet property="name" destination="fsH-qj-p5U" id="8tC-S6-Kmy"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="LangageHeaderViewCell" reuseIdentifier="HeaderView" id="dbG-gN-IfL" customClass="LangageHeaderViewCell" customModule="collectionviewtest" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="75"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HEADER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frB-TO-3Qm">
+                                    <rect key="frame" x="267" y="27" width="66" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.42229677301643576" green="0.91194453801368636" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="frB-TO-3Qm" firstAttribute="centerX" secondItem="dbG-gN-IfL" secondAttribute="centerX" id="oJO-5d-ue6"/>
+                                <constraint firstItem="frB-TO-3Qm" firstAttribute="centerY" secondItem="dbG-gN-IfL" secondAttribute="centerY" id="y5L-RD-tOw"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="title" destination="frB-TO-3Qm" id="a2G-sK-Rt7"/>
+                            </connections>
+                        </collectionReusableView>
+                        <connections>
+                            <outlet property="dataSource" destination="a2G-GV-9yq" id="wrP-21-Zoe"/>
+                            <outlet property="delegate" destination="a2G-GV-9yq" id="rvT-CM-Koq"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3l0-bv-ueT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042" y="481"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="swift_icon" width="128" height="128"/>
+    </resources>
+</document>
